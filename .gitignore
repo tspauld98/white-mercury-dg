@@ -1,0 +1,14 @@
+# White-Mercury-DG project gitignore
+.classpath
+.project
+.settings
+target
+test-output
+/lib
+/engine.log*
+/TestText
+/white-mercury-dg-0.0.1-SNAPSHOT.jar
+/*.txt
+test.out
+*.json
+/src/main/sql
