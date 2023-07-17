@@ -31,18 +31,26 @@ Options
   >* json - run the utility to generate data in a JSON file.
   >* database - run the utility to generate data in a database.
 
-  -DdbUrl=[URL of target database]
+ ```shell
+   -DdbUrl=[URL of target database]
+```
 
   >Defaults to localhost.  Only applicable when runMode is set to 'database'.
 
+ ```shell
   -DdbUser=[user name for target database]
+```
 
   >Defaults to root.  Only applicable when runMode is set to 'database'.
 
+ ```shell
   -DdbPassword=[password for target database]
+```
 
   >Only applicable when runMode is set to 'database'.
 
+ ```shell
   -Dcycles=[number of rows to generate in target]
+```
 
   >Defaults to 100 rows.  Only applicable when runMode is set to 'database' or 'json'.
