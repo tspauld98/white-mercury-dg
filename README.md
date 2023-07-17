@@ -13,29 +13,34 @@ The White Mercury Data Generation tool is an executable shaded jar file.  A 'sha
 Usage
 -----
 
-	java [options] -jar [path to jar]white-mercury-dg-[version qualifer]-shaded.jar
+``` shell
+
+  java [options] -jar [path to jar]white-mercury-dg-[version qualifer]-shaded.jar
+
+```
 
 Options
 -------
 
-	-DrunMode=[legacy | test | json | database]
+  -DrunMode=[legacy | test | json | database]
 
-		legacy - run the utility with the legacy Swing UI from dgMaster.
-		test - run the utility with default parameters to generate a test file.
-		database - run the utility to generate data in a database.
+  legacy - run the utility with the legacy Swing UI from dgMaster.
+  test - run the utility with default parameters to generate a test file.
+  json - run the utility to generate data in a JSON file.
+  database - run the utility to generate data in a database.
 
-	-DdbUrl=[URL of target database]
+  -DdbUrl=[URL of target database]
 
-		Defaults to localhost.  Only applicable when runMode is set to 'database'.
+  >Defaults to localhost.  Only applicable when runMode is set to 'database'.
 
-	-DdbUser=[user name for target database]
+  -DdbUser=[user name for target database]
 
-		Defaults to root.  Only applicable when runMode is set to 'database'.
+  >Defaults to root.  Only applicable when runMode is set to 'database'.
 
-	-DdbPassword=[password for target database]
+  -DdbPassword=[password for target database]
 
-		Only applicable when runMode is set to 'database'.
+  >Only applicable when runMode is set to 'database'.
 
-	-Dcycles=[number of rows to generate in target]
+  -Dcycles=[number of rows to generate in target]
 
-		Defaults to 100 rows.  Only applicable when runMode is set to 'database' or 'json'.
+  >Defaults to 100 rows.  Only applicable when runMode is set to 'database' or 'json'.
