@@ -22,12 +22,14 @@ Usage
 Options
 -------
 
-  -DrunMode=[legacy | test | json | database]
+ ```shell
+   -DrunMode=[legacy | test | json | database]
+ ```
 
-  legacy - run the utility with the legacy Swing UI from dgMaster.
-  test - run the utility with default parameters to generate a test file.
-  json - run the utility to generate data in a JSON file.
-  database - run the utility to generate data in a database.
+  >legacy - run the utility with the legacy Swing UI from dgMaster.
+  >test - run the utility with default parameters to generate a test file.
+  >json - run the utility to generate data in a JSON file.
+  >database - run the utility to generate data in a database.
 
   -DdbUrl=[URL of target database]
 
