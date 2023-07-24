@@ -4,7 +4,7 @@ White Mercury Data Generator Project
 Description
 -----------
 
-I usually deal with large amounts of data.  These large sets of data usually contain PII (Personally-Identifiable Information) data.  If you need to prototype or test out a concept, using production data is problematic.  In almost all cases, we achieve better results from using randomized data.  This project aspires to provide a complete set of tools for generating large sets of data in a variety of structures to a variety of data store types.  The tools are designed to be integrated with build and development tools so that they can be used in continuous integration and other agile development activities.
+I usually deal with large amounts of data.  These large sets of data usually contain PII (Personally-Identifiable Information) data.  If you need to prototype or test out a concept, using production data is problematic from a compliance and privacy perspective.  In almost all cases, we achieve better results from using randomized data.  This project aspires to provide a complete set of tools for generating large sets of data in a variety of structures to a variety of data store types.  The tools are designed to be integrated with build and development tools so that they can be used in continuous integration and other agile development activities.
 
 The data generation engine is based on the dgMaster open-sourced data generation toolkit.  You can take a look at the original project at the [dgMaster Web Site](http://dgmaster.sourceforge.net/).  The original project was published under the GPL v2 license which means that any derivative works (which includes our data generation tool) must be published under the same license.
 

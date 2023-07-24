@@ -14,9 +14,9 @@ import generator.misc.DBDriverInfo;
 import generator.misc.RandomiserType;
 import generator.misc.Utils;
 
-import com.mysql.jdbc.Connection;
+import java.sql.Connection;
 import java.sql.DriverManager;
-import com.mysql.jdbc.PreparedStatement;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;

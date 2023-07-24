@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 import com.brc.whitemercurydg.RunController;
 import com.brc.whitemercurydg.RunMode;
-import com.mysql.jdbc.exceptions.jdbc4.CommunicationsException;
+//import java.sql.SQLException;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;
@@ -131,7 +131,7 @@ public class DatabaseTest {
 			output = runner.runByMode(args, runMode, log4jConfig);
 			assertNotNull(output);
 		} catch (Exception ex) {
-			if (!(ex instanceof CommunicationsException)) {
+			if (!(ex instanceof SQLException)) {
 				System.err.println(ex);
 				ex.printStackTrace();
 				fail("Unexpected exception during test.", ex);
