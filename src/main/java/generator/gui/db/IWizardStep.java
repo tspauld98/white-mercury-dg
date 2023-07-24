@@ -10,7 +10,7 @@
 package generator.gui.db;
 
 import generator.db.DBGeneratorDefinition;
-import java.util.HashMap;
+//import java.util.HashMap;
 
 /**
  *
