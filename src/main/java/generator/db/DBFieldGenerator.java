@@ -9,7 +9,7 @@
 
 package generator.db;
 
-import generator.db.DBField;
+//import generator.db.DBField;
 //import generator.db.DBTable;
 
 /**

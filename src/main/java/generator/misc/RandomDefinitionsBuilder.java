@@ -5,16 +5,17 @@
 
 
 package generator.misc;
-import generator.gui.Main;
+//import generator.gui.Main;
 
-import java.io.File;
+//import java.io.File;
 import java.util.Vector;
-import org.apache.log4j.Logger;
-import org.xml.sax.*;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+//import org.xml.sax.*;
 import javax.xml.parsers.SAXParserFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.parsers.SAXParser;
-import org.xml.sax.helpers.DefaultHandler;
+// import javax.xml.parsers.ParserConfigurationException;
+// import javax.xml.parsers.SAXParser;
+// import org.xml.sax.helpers.DefaultHandler;
 
 /**
  * Retrieves a Vector of data from an XML file. The user needs to provide a
@@ -31,7 +32,7 @@ public class RandomDefinitionsBuilder
 {   
     private String filename;
     private SAXDataHandler saxHandler;
-    private Logger logger = Logger.getLogger(RandomDefinitionsBuilder.class);
+    private Logger logger = LogManager.getLogger(RandomDefinitionsBuilder.class);
 
     //set the filename to be parsed
     public void setFilename(String filename)

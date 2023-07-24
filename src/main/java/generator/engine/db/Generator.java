@@ -26,7 +26,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Vector;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.perf4j.LoggingStopWatch;
 import org.perf4j.StopWatch;
 
@@ -41,7 +42,7 @@ public class Generator
     private Vector<RandomiserInstance> vRandomiserInstances;
     private Vector<DBDriverInfo> vDBDriverInfo;
     private DBGeneratorDefinition dbGenConfig;
-    private Logger logger = Logger.getLogger(Generator.class);
+    private Logger logger = LogManager.getLogger(Generator.class);
     private ProgressUpdateObserver observer;
 
     /** Creates a new instance of Generator */

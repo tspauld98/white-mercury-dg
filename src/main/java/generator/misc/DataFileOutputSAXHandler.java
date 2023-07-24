@@ -6,10 +6,11 @@
 
 
 package generator.misc;
-import java.util.LinkedHashMap;
+//import java.util.LinkedHashMap;
 import java.util.Vector;
-import org.apache.log4j.Logger;
-import generator.extenders.RandomiserInstance;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+//import generator.extenders.RandomiserInstance;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
@@ -21,7 +22,7 @@ import org.xml.sax.SAXException;
  */
 public class DataFileOutputSAXHandler extends SAXDataHandler
 {
-    private Logger logger = Logger.getLogger(DataFileOutputSAXHandler.class);
+    private Logger logger = LogManager.getLogger(DataFileOutputSAXHandler.class);
     private Vector<DataFileDefinition> vDFDs; //the output definitions
     
     //each output definition holds a number of data items, a data item

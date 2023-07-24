@@ -10,13 +10,14 @@ import generator.misc.Utils;
 import java.util.LinkedHashMap;
 import java.util.Random;
 import java.util.Vector;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
 
 public class ListRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(ListRandomiser.class);
+    Logger logger = LogManager.getLogger(ListRandomiser.class);
     Random probability, nullGen, gen;
     Vector<String> vItems;
     boolean fileSelected;

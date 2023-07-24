@@ -15,7 +15,7 @@
 
 package generator.extenders;
 
-import java.util.HashMap;
+//import java.util.HashMap;
 
 /**
  * Provides the functionality for the generator panels.

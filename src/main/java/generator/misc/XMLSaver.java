@@ -23,14 +23,15 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 
 public class XMLSaver
 {
-    Logger logger = Logger.getLogger(XMLSaver.class);
+    Logger logger = LogManager.getLogger(XMLSaver.class);
     
 
     public Document createDocument(String rootElementName)

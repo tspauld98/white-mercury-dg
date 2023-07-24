@@ -7,14 +7,15 @@ package generator.randomisers;
 import java.text.DecimalFormat;
 import java.util.LinkedHashMap;
 import java.util.Random;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
 
 
 public class NumDoubleRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(NumDoubleRandomiser.class);
+    Logger logger = LogManager.getLogger(NumDoubleRandomiser.class);
     Random probability, nullGen, gen;
     double fromField[], toField[];
     int limits[];

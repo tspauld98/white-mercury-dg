@@ -6,13 +6,14 @@
 package generator.randomisers;
 import java.util.LinkedHashMap;
 import java.util.Random;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
 
 public class StringRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(StringRandomiser.class);
+    Logger logger = LogManager.getLogger(StringRandomiser.class);
     
     Random  nullGen, puncGen, gen;
     boolean lPunctuation;

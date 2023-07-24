@@ -8,7 +8,8 @@ package generator.misc;
 
 import java.util.LinkedHashMap;
 import java.util.Vector;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.RandomiserInstance;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
@@ -21,7 +22,7 @@ import org.xml.sax.SAXException;
  */
 public class RandomInstanceSAXHandler extends SAXDataHandler
 {
-    private Logger logger = Logger.getLogger(RandomInstanceSAXHandler.class);
+    private Logger logger = LogManager.getLogger(RandomInstanceSAXHandler.class);
     private Vector<RandomiserInstance> vRandomInstances;
     private RandomiserInstance ri;
     private LinkedHashMap properties;

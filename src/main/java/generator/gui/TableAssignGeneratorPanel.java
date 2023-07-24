@@ -27,7 +27,8 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  *
@@ -41,7 +42,7 @@ public class TableAssignGeneratorPanel extends javax.swing.JPanel
     private DefaultTableModel modelTB = new DefaultTableModel();
     private JComboBox jComboBox1 = new JComboBox();
     private DBTableGenerator dbTableGenerator;
-    private Logger logger = Logger.getLogger(MainForm.class);
+    private Logger logger = LogManager.getLogger(MainForm.class);
 
     /** Creates new form TableAssignGeneratorPanel */
     public TableAssignGeneratorPanel()
@@ -238,7 +239,7 @@ class MyTableCellEditor extends AbstractCellEditor implements TableCellEditor
     // This is the component that will handle the editing of the cell value
     JComboBox cmbData = new JComboBox();
     DBUtils dbUtils;
-    Logger logger = Logger.getLogger(MyTableCellEditor.class);
+    Logger logger = LogManager.getLogger(MyTableCellEditor.class);
 
     public MyTableCellEditor(Vector<RandomiserInstance> vRI, Vector<RandomiserType> vRT)
     {

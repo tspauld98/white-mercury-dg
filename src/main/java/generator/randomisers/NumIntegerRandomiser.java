@@ -6,14 +6,15 @@
 package generator.randomisers;
 import java.util.LinkedHashMap;
 import java.util.Random;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
 
 
 public class NumIntegerRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(NumIntegerRandomiser.class);
+    Logger logger = LogManager.getLogger(NumIntegerRandomiser.class);
     Random probability, nullGen, gen;
     int fromField[], toField[];
     int limits[];

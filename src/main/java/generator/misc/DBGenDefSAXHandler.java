@@ -9,11 +9,12 @@ import generator.db.DBGeneratorDefinition;
 import generator.db.DBMetaDataManager;
 import generator.db.DBTable;
 import generator.db.DBTableGenerator;
-import java.sql.SQLException;
-import java.util.LinkedHashMap;
+//import java.sql.SQLException;
+//import java.util.LinkedHashMap;
 import java.util.Vector;
-import org.apache.log4j.Logger;
-import generator.extenders.RandomiserInstance;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+//import generator.extenders.RandomiserInstance;
 import java.util.ArrayList;
 import java.util.List;
 import org.xml.sax.Attributes;
@@ -31,7 +32,7 @@ public class DBGenDefSAXHandler extends SAXDataHandler
     private DBMetaDataManager dbMetaManager;
     private Vector<DBDriverInfo> vDBDriverInfo;
     private DBDriverInfo dbDriverInfo;
-    private Logger logger = Logger.getLogger(DBGenDefSAXHandler.class);
+    private Logger logger = LogManager.getLogger(DBGenDefSAXHandler.class);
     private Vector<DBGeneratorDefinition> vDBGenDef; //the output definitions
     private DBForeignKey dbForeignKey;
     private List<DBForeignKey> vDBForeignKeys;

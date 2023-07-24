@@ -6,9 +6,10 @@
 package generator.randomisers;
 
 import java.util.LinkedHashMap;
-import java.util.Locale;
+//import java.util.Locale;
 import java.util.Random;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
 import org.databene.benerator.Generator;
@@ -18,7 +19,7 @@ import org.databene.benerator.factory.GeneratorFactory;
 
 public class RegularExpressionRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(RegularExpressionRandomiser.class);
+    Logger logger = LogManager.getLogger(RegularExpressionRandomiser.class);
     LinkedHashMap hashMap;
     Random probability, nullGen;
     String regExpression, sNulls, sMin, sMax;
@@ -53,7 +54,7 @@ public class RegularExpressionRandomiser implements IRandomiserFunctionality
         probability = new Random();
         nullGen     = new Random();
         
-        Locale locale = new Locale("GBR");
+        //Locale locale = new Locale("GBR");
         //get the generator
         generator = GeneratorFactory.getRegexStringGenerator(regExpression, min, max, null, nulls);
     }

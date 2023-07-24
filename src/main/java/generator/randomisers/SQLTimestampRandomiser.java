@@ -10,14 +10,15 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.LinkedHashMap;
 import java.util.Random;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
 
 
 public class SQLTimestampRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(SQLDateRandomiser.class);
+    Logger logger = LogManager.getLogger(SQLDateRandomiser.class);
     Random probability, nullGen, gen;
     long fromField[], toField[];
     int limits[];

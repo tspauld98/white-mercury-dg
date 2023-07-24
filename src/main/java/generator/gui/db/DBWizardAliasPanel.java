@@ -26,7 +26,8 @@ import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableColumn;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  *
@@ -41,7 +42,7 @@ public class DBWizardAliasPanel extends javax.swing.JPanel implements IWizardSte
     private DefaultComboBoxModel modelSchema;
     private TableTBModel    modelTB;
     
-    private Logger logger = Logger.getLogger(DBWizardAliasPanel.class);
+    private Logger logger = LogManager.getLogger(DBWizardAliasPanel.class);
     private DBMetaDataManager dbMeta;
     
     private HashMap hmValues;
@@ -704,7 +705,7 @@ class TableTBModel extends AbstractTableModel
     
     public TableTBModel()
     {
-        logger = Logger.getLogger(TableTBModel.class);
+        logger = LogManager.getLogger(TableTBModel.class);
         empty  = data;
     }
     

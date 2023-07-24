@@ -109,7 +109,7 @@ public class DatabaseTest {
 	}
 
 	private int recordCount() {
-		int count = 0;
+		//int count = 0;
 
 
 		return Integer.parseInt(CYCLES_SYS_PROPERTY_VALUE);

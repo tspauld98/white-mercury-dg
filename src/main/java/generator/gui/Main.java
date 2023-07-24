@@ -17,7 +17,7 @@
 package generator.gui;
 
 //import org.apache.log4j.Logger;
-import org.apache.log4j.xml.DOMConfigurator;
+//import org.apache.log4j.xml.DOMConfigurator;
 
 
 public class Main
@@ -28,7 +28,7 @@ public class Main
      */
     public static void main(String[] args)
     {
-        DOMConfigurator.configure(Main.class.getResource("/generator.xml"));
+        //DOMConfigurator.configure(Main.class.getResource("/generator.xml"));
         
         // TODO code application logic here
         MainForm frmMain = new MainForm();

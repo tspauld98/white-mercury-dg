@@ -6,16 +6,17 @@
 package generator.randomisers;
 import java.util.LinkedHashMap;
 import java.util.Random;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
-import generator.extenders.RandomiserPanel;
+//import generator.extenders.RandomiserPanel;
 import generator.extenders.RandomiserInstance;
 
 
 
 public class LongSequencer implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(LongSequencer.class);
+    Logger logger = LogManager.getLogger(LongSequencer.class);
     int nulls;
     long counter;
     Random nullGen;

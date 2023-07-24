@@ -6,27 +6,28 @@
 package generator.engine.file;
 import generator.engine.ProgressUpdateObservable;
 import generator.engine.ProgressUpdateObserver;
-import java.awt.BorderLayout;
-import java.awt.Component;
-import java.awt.Container;
+//import java.awt.BorderLayout;
+//import java.awt.Component;
+//import java.awt.Container;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
-import java.util.HashMap;
+//import java.lang.reflect.InvocationTargetException;
+//import java.util.HashMap;
 import java.util.Vector;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
+//import javax.swing.JComponent;
+// import javax.swing.JDialog;
+// import javax.swing.JFrame;
+// import javax.swing.JOptionPane;
+// import javax.swing.JPanel;
+// import javax.swing.SwingUtilities;
 import generator.misc.Constants;
 import generator.misc.DataFileDefinition;
 import generator.misc.DataFileItem;
 import generator.misc.RandomiserType;
 import generator.misc.Utils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
 
@@ -38,7 +39,7 @@ public class Generator implements ProgressUpdateObservable
     Vector<DataFileDefinition> vDataFileDefinitions;
     DataFileDefinition dataFileDefinition;
     
-    Logger logger = Logger.getLogger(Generator.class);
+    Logger logger = LogManager.getLogger(Generator.class);
     
     ProgressUpdateObserver observer;
     

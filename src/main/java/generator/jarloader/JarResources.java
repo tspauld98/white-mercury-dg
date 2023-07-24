@@ -12,7 +12,8 @@ package generator.jarloader;
 import java.io.*;
 import java.util.*;
 import java.util.zip.*;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * JarResources: JarResources maps all resources included in a
@@ -21,7 +22,7 @@ import org.apache.log4j.Logger;
  */
 public final class JarResources
 {
-    Logger logger = Logger.getLogger(JarResources.class);
+    Logger logger = LogManager.getLogger(JarResources.class);
     
     // jar resource mapping tables
     private Hashtable htSizes=new Hashtable();

@@ -8,7 +8,8 @@
 package generator.misc;
 
 import java.util.Vector;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
@@ -22,7 +23,7 @@ public class RandomTypeSAXHandler extends SAXDataHandler
 {
     private RandomiserType rt;
     private Vector<RandomiserType> vRandomTypes;
-    private Logger logger = Logger.getLogger(RandomTypeSAXHandler.class);
+    private Logger logger = LogManager.getLogger(RandomTypeSAXHandler.class);
     
     public RandomTypeSAXHandler()
     {

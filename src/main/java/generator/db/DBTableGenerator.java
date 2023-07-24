@@ -9,14 +9,15 @@
 package generator.db;
 
 //import generator.gui.graph.*;
-import generator.db.DBField;
-import generator.db.DBForeignKey;
-import generator.db.DBTable;
+// import generator.db.DBField;
+// import generator.db.DBForeignKey;
+// import generator.db.DBTable;
 import generator.misc.Constants;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  *
@@ -30,7 +31,7 @@ public class DBTableGenerator extends DBTable
     private int generatorType; //reserved for future use (eg.On the fly defined generator,built-in, Bean generator)
     private List<DBFieldGenerator> dbTableGenFields;
     private List<DBForeignKey> dbForeignKeys;
-    private Logger logger = Logger.getLogger(DBTableGenerator.class);
+    private Logger logger = LogManager.getLogger(DBTableGenerator.class);
 
     public DBTableGenerator()
     {

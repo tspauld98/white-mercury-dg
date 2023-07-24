@@ -14,14 +14,14 @@ import generator.misc.DataFileDefinition;
 import generator.misc.DataFileItem;
 import generator.misc.FileOutDataSaver;
 import generator.misc.RandomiserType;
-import generator.misc.Constants;
+//import generator.misc.Constants;
 import generator.misc.Utils;
-import generator.gui.SwingWorker;
-import java.lang.reflect.InvocationTargetException;
+//import generator.gui.SwingWorker;
+//import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import javax.swing.DefaultListModel;
-import javax.swing.Icon;
+//import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
@@ -30,13 +30,14 @@ import javax.swing.SwingUtilities;
 import generator.extenders.RandomiserPanel;
 import generator.extenders.RandomiserInstance;
 import java.util.Vector;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 
 public class FileOutputPanel extends javax.swing.JPanel implements ProgressUpdateObserver
 {
-    private Logger logger = Logger.getLogger(FileOutputPanel.class);
+    private Logger logger = LogManager.getLogger(FileOutputPanel.class);
     private Vector<RandomiserType> vRandomiserTypes;
     private Vector<RandomiserInstance> vRandomiserInstances;
     private Vector<DataFileDefinition> vDFDs;

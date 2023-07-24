@@ -7,7 +7,7 @@
 package generator.gui.db;
 
 import generator.db.DBGeneratorDefinition;
-import generator.gui.*;
+//import generator.gui.*;
 import java.util.HashMap;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;

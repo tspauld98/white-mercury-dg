@@ -22,12 +22,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 //import java.util.Properties;
-import org.apache.log4j.Logger;
-
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class DBMetaDataManager
 {
-    private Logger logger = Logger.getLogger(DBMetaDataManager.class);
+    private Logger logger = LogManager.getLogger(DBMetaDataManager.class);
     private String driverLocation;
     private String driverClass;
 	private String url, user, password;

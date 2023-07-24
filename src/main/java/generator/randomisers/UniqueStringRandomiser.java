@@ -6,16 +6,17 @@
 package generator.randomisers;
 import java.util.LinkedHashMap;
 import java.util.Random;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
-import generator.extenders.RandomiserPanel;
+//import generator.extenders.RandomiserPanel;
 import generator.extenders.RandomiserInstance;
 
 
 
 public class UniqueStringRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(UniqueStringRandomiser.class);
+    Logger logger = LogManager.getLogger(UniqueStringRandomiser.class);
     int nulls, idx, extra;
     char[]  chCapsLetters  = new char[26];
     Random nullGen, gen;     

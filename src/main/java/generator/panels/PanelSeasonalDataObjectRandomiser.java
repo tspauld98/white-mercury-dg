@@ -17,7 +17,8 @@ import java.util.Map;
 import java.util.Vector;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  *
@@ -25,7 +26,7 @@ import org.apache.log4j.Logger;
  */
 public class PanelSeasonalDataObjectRandomiser extends RandomiserPanel
 {
-    Logger logger = Logger.getLogger(PanelRegularExpressionRandomiser.class);
+    Logger logger = LogManager.getLogger(PanelRegularExpressionRandomiser.class);
     Map mapValues= new HashMap();
     Vector vModelColumns;
     

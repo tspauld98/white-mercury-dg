@@ -13,7 +13,8 @@ import java.util.LinkedHashMap;
 import java.util.Set;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  *
@@ -21,7 +22,7 @@ import org.apache.log4j.Logger;
  */
 public class PanelGenericRandomiser extends RandomiserPanel
 {
-    Logger logger = Logger.getLogger(PanelGenericRandomiser.class);
+    Logger logger = LogManager.getLogger(PanelGenericRandomiser.class);
     
     /** Creates new form GenericRandomiserPanel */
     public PanelGenericRandomiser()

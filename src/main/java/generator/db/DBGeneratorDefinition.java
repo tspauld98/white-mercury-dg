@@ -9,7 +9,7 @@
 
 package generator.db;
 
-import generator.db.DBTableGenerator;
+//import generator.db.DBTableGenerator;
 import java.util.List;
 
 /**

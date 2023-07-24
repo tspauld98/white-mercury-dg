@@ -12,7 +12,8 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.LinkedHashMap;
 import java.util.Random;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
 import java.sql.Date;
@@ -20,7 +21,7 @@ import java.sql.Date;
 
 public class DateRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(DateRandomiser.class);
+    Logger logger = LogManager.getLogger(DateRandomiser.class);
     Random probability, nullGen, gen;
     long fromField[], toField[];
     int limits[];

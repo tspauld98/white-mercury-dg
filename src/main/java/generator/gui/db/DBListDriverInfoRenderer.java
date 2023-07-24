@@ -9,7 +9,7 @@
 
 package generator.gui.db;
 
-import generator.gui.*;
+//import generator.gui.*;
 import generator.misc.Constants;
 import generator.misc.DBDriverInfo;
 import generator.misc.Utils;
