@@ -9,7 +9,8 @@ import generator.misc.Utils;
 import java.util.LinkedHashMap;
 import java.util.Random;
 import java.util.Vector;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
 import java.io.File;
@@ -17,7 +18,7 @@ import java.io.File;
 
 public class EnglishWordRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(EnglishWordRandomiser.class);
+    Logger logger = LogManager.getLogger(EnglishWordRandomiser.class);
     
     Random  nullGen, puncGen, gen;
     boolean lPunctuation;

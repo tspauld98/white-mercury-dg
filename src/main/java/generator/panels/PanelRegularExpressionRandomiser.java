@@ -11,7 +11,8 @@ import generator.extenders.RandomiserPanel;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import javax.swing.JOptionPane;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  *
@@ -19,7 +20,7 @@ import org.apache.log4j.Logger;
  */
 public class PanelRegularExpressionRandomiser extends RandomiserPanel
 {
-    Logger logger = Logger.getLogger(PanelRegularExpressionRandomiser.class);
+    Logger logger = LogManager.getLogger(PanelRegularExpressionRandomiser.class);
     
     
     /** Creates new form PanelRegularExpressionRandomiser */

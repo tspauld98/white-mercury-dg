@@ -1,7 +1,7 @@
 
 
 package generator.panels;
-import java.io.File;
+//import java.io.File;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -9,16 +9,17 @@ import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.RandomiserPanel;
-import generator.extenders.IGeneratorPanel;
+//import generator.extenders.IGeneratorPanel;
 import generator.extenders.RandomiserInstance;
 
 
 public class PanelListItemsSequencer  extends RandomiserPanel
 {
     
-    Logger logger = Logger.getLogger(PanelListItemsSequencer.class);
+    Logger logger = LogManager.getLogger(PanelListItemsSequencer.class);
     /** Creates new form PanelDoubleGenerator */
     
     

@@ -13,15 +13,16 @@ import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.RandomiserPanel;
-import generator.extenders.IGeneratorPanel;
+//import generator.extenders.IGeneratorPanel;
 import generator.extenders.RandomiserInstance;
 
 
 public class PanelListItemRandomiser  extends RandomiserPanel
 {
-    Logger logger = Logger.getLogger(PanelListItemRandomiser.class);
+    Logger logger = LogManager.getLogger(PanelListItemRandomiser.class);
     /** Creates new form PanelDoubleGenerator */
     
     

@@ -6,11 +6,12 @@
 
 package generator.randomisers;
 import generator.misc.Utils;
-import java.io.FileNotFoundException;
+//import java.io.FileNotFoundException;
 import java.util.LinkedHashMap;
 import java.util.Random;
 import java.util.Vector;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
 import java.io.File;
@@ -18,7 +19,7 @@ import java.io.File;
 
 public class EmailRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(EmailRandomiser.class);
+    Logger logger = LogManager.getLogger(EmailRandomiser.class);
     int nulls;
     int iTLDs, iFNames, iLNames, iProvid;
     Random nullGen, gen1, gen2, gen3;
