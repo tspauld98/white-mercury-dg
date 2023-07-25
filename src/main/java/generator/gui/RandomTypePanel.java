@@ -16,14 +16,15 @@ package generator.gui;
 
 import generator.misc.ApplicationContext;
 import generator.misc.RandomInstanceSaver;
-import generator.misc.RandomiserType;
+//import generator.misc.RandomiserType;
 import java.awt.BorderLayout;
 import java.net.URL;
 import java.util.Vector;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IGeneratorPanel;
 import generator.extenders.RandomiserInstance;
 
@@ -34,7 +35,7 @@ import generator.extenders.RandomiserInstance;
 public class RandomTypePanel extends javax.swing.JPanel
 {
     private Vector<RandomiserInstance> vRandomInstances;
-    private Logger logger = Logger.getLogger(RandomTypePanel.class);
+    private Logger logger = LogManager.getLogger(RandomTypePanel.class);
     
     /** Creates new form RandomTypePanel */
     public RandomTypePanel()

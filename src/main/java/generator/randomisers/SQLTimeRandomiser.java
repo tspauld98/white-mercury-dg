@@ -4,21 +4,22 @@
  */
 
 package generator.randomisers;
-import generator.misc.Utils;
+//import generator.misc.Utils;
 import java.sql.Time;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+//import java.util.Calendar;
+//import java.util.GregorianCalendar;
 import java.util.LinkedHashMap;
 import java.util.Random;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
-import java.sql.Date;
+//import java.sql.Date;
 
 
 public class SQLTimeRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(SQLTimeRandomiser.class);
+    Logger logger = LogManager.getLogger(SQLTimeRandomiser.class);
     Random probability, nullGen, gen;
     long fromField[], toField[], diffMillis[];
     int limits[];
@@ -31,11 +32,11 @@ public class SQLTimeRandomiser implements IRandomiserFunctionality
         String sRangesNum, sFromField, sToField, sPercentField, sNulls;
         
         //i need these gregorian cals. so i can pre-compute the days between them
-        Time timeFromField, timeToField;
+        //Time timeFromField, timeToField;
         
         int rangesNum, percentField[];
         LinkedHashMap hashMap;
-        Utils utils = new Utils();
+        //Utils utils = new Utils();
         
         hashMap = ri.getProperties();
         sRangesNum  = (String) hashMap.get("rangesNum");

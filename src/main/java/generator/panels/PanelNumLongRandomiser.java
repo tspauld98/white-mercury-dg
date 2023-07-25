@@ -11,15 +11,16 @@ import java.util.LinkedHashMap;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
-import org.apache.log4j.Logger;
+//import javax.swing.table.TableModel;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.RandomiserPanel;
 import generator.extenders.RandomiserInstance;
 
 
 public class PanelNumLongRandomiser extends RandomiserPanel
 {
-    Logger logger = Logger.getLogger(PanelNumIntegerRandomiser.class);
+    Logger logger = LogManager.getLogger(PanelNumIntegerRandomiser.class);
     
     /** Creates new form PanelNumLongRandomiser */
     public PanelNumLongRandomiser()

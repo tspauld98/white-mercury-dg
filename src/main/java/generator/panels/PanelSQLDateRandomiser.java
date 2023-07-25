@@ -8,19 +8,20 @@ import generator.extenders.RandomiserInstance;
 import generator.extenders.RandomiserPanel;
 import java.net.URL;
 import java.sql.Date;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+// import java.text.DateFormat;
+// import java.text.SimpleDateFormat;
 import java.util.LinkedHashMap;
 import javax.swing.ImageIcon;
 import javax.swing.JCheckBox;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 public class PanelSQLDateRandomiser extends RandomiserPanel
 {
-    Logger logger = Logger.getLogger(PanelSQLDateRandomiser.class);
+    Logger logger = LogManager.getLogger(PanelSQLDateRandomiser.class);
     JCheckBox[] chkDays = new JCheckBox[7];
     
     /** Creates new form PanelDateRandomiser */

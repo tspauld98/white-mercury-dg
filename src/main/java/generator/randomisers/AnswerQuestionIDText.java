@@ -6,18 +6,19 @@
 
 package generator.randomisers;
 import generator.misc.Utils;
-import java.util.HashMap;
+//import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Random;
 import java.util.Vector;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
 
 
 public class AnswerQuestionIDText implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(AnswerQuestionIDText.class);
+    Logger logger = LogManager.getLogger(AnswerQuestionIDText.class);
     EnglishWordRandomiser englishWordGenerator;
     
     int idx, nextAction, countGens, maxGens;

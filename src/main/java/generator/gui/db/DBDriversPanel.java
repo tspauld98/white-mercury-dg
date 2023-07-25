@@ -6,26 +6,27 @@
 
 package generator.gui.db;
 
-import generator.gui.*;
+//import generator.gui.*;
 import generator.jarloader.JarClassLoader;
 import generator.misc.ApplicationContext;
 import generator.misc.Constants;
 import generator.misc.DBDriverInfo;
 import generator.misc.DBDriverInfoSaver;
-import generator.jarloader.JarResources;
-import generator.misc.Utils;
-import java.awt.Component;
+// import generator.jarloader.JarResources;
+// import generator.misc.Utils;
+// import java.awt.Component;
 import java.io.File;
 import java.net.URL;
 import java.util.Vector;
 import javax.swing.DefaultListModel;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
-import javax.swing.JLabel;
-import javax.swing.JList;
+// import javax.swing.JLabel;
+// import javax.swing.JList;
 import javax.swing.JOptionPane;
-import javax.swing.ListCellRenderer;
-import org.apache.log4j.Logger;
+//import javax.swing.ListCellRenderer;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  *
@@ -35,7 +36,7 @@ public class DBDriversPanel extends javax.swing.JPanel
 {
     private Vector<DBDriverInfo> vDBDriversInfo;
     private DefaultListModel modelDBData;
-    private Logger logger = Logger.getLogger(DBDriversPanel.class);
+    private Logger logger = LogManager.getLogger(DBDriversPanel.class);
     
     /** Creates new form DBDriversForm */
     public DBDriversPanel()

@@ -12,12 +12,13 @@ package generator.db;
 import generator.misc.ApplicationContext;
 import generator.misc.RandomiserType;
 import java.lang.reflect.Field;
-import java.sql.Types;
+//import java.sql.Types;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  *
@@ -25,7 +26,7 @@ import org.apache.log4j.Logger;
  */
 public class DBUtils
 {
-    private static Logger logger = Logger.getLogger("DBUtils");
+    private static Logger logger = LogManager.getLogger("DBUtils");
     private static List<SQLJavaMapping> alSQLMappings;
     private static Map map;
     

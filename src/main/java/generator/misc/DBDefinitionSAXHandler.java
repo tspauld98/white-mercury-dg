@@ -10,10 +10,11 @@
 package generator.misc;
 
 import java.util.Vector;
-import java.util.LinkedHashMap;
-import java.util.Vector;
-import org.apache.log4j.Logger;
-import generator.extenders.RandomiserInstance;
+//import java.util.LinkedHashMap;
+//import java.util.Vector;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+//import generator.extenders.RandomiserInstance;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
@@ -24,7 +25,7 @@ import org.xml.sax.SAXException;
  */
 public class DBDefinitionSAXHandler extends SAXDataHandler
 {
-    private Logger logger = Logger.getLogger(DBDefinitionSAXHandler.class);
+    private Logger logger = LogManager.getLogger(DBDefinitionSAXHandler.class);
     private Vector<DBFileDefinition> vDBDefinitions; //the output definitions
     private DBFileDefinition dbFileDefinition;
     private String attribValue;

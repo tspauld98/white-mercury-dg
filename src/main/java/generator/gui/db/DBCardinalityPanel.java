@@ -7,7 +7,7 @@
 package generator.gui.db;
 
 import generator.db.DBForeignKey;
-import generator.gui.*;
+//import generator.gui.*;
 import generator.gui.graph.DBCardinalityGenerator;
 import generator.db.DBTableGenerator;
 import java.util.Vector;

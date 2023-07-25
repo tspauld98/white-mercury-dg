@@ -14,16 +14,17 @@ import generator.misc.DBDriverInfo;
 import generator.misc.RandomiserType;
 import generator.misc.Utils;
 
-import com.mysql.jdbc.Connection;
+import java.sql.Connection;
 import java.sql.DriverManager;
-import com.mysql.jdbc.PreparedStatement;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Vector;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.perf4j.LoggingStopWatch;
 import org.perf4j.StopWatch;
 
@@ -37,7 +38,7 @@ public class Generator {
     private Vector<RandomiserInstance> vRandomiserInstances;
     private Vector<DBDriverInfo> vDBDriverInfo;
     private DBGeneratorDefinition dbGenConfig;
-    private Logger logger = Logger.getLogger(Generator.class);
+    private Logger logger = LogManager.getLogger(Generator.class);
     private ProgressUpdateObserver observer;
 
     public Generator() {
@@ -50,7 +51,7 @@ public class Generator {
         //load the db drivers info
         vDBDriverInfo = ApplicationContext.getInstance().getDriverInfo();
 
-        logger = Logger.getLogger(Generator.class);
+        logger = LogManager.getLogger(Generator.class);
     }
 
 	/**

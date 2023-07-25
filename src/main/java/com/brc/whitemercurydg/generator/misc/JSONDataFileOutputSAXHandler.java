@@ -6,7 +6,8 @@ package com.brc.whitemercurydg.generator.misc;
 
 
 import java.util.Vector;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
@@ -15,7 +16,7 @@ import generator.misc.SAXDataHandler;
 
 
 public class JSONDataFileOutputSAXHandler extends SAXDataHandler {
-	private Logger logger = Logger.getLogger(JSONDataFileOutputSAXHandler.class);
+	private Logger logger = LogManager.getLogger(JSONDataFileOutputSAXHandler.class);
 	private Vector<JSONDataFileDefinition> vDFDs;
 	private Vector<JSONDataFileItem> vDataItems;
     private JSONDataFileDefinition dataFileDefinition;

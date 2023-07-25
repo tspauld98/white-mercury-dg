@@ -9,16 +9,16 @@
 
 package generator.gui.db;
 
-import generator.gui.*;
-import generator.misc.Constants;
-import generator.misc.DBDriverInfo;
+// import generator.gui.*;
+// import generator.misc.Constants;
+// import generator.misc.DBDriverInfo;
 import generator.misc.Utils;
 import java.awt.Component;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.ListCellRenderer;
-import org.w3c.dom.ls.LSException;
+//import org.w3c.dom.ls.LSException;
 
 
 class DBListDBRenderer extends JLabel implements ListCellRenderer

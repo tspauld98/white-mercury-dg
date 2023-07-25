@@ -56,7 +56,7 @@ public class TableRenderer extends JPanel implements CellViewRenderer
     {
         super.paint(g);
 
-        Graphics2D g2 = (Graphics2D) g;
+        //Graphics2D g2 = (Graphics2D) g;
         Dimension d = getSize();
         g.drawRect(0, 0, d.width - 1, d.height - 1);
 

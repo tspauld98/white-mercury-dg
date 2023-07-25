@@ -9,12 +9,13 @@ import java.util.LinkedHashMap;
 import javax.swing.JOptionPane;
 import generator.extenders.RandomiserPanel;
 import generator.extenders.RandomiserInstance;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 public class PanelStringRandomiser extends RandomiserPanel
 {
-    Logger logger = Logger.getLogger(PanelStringRandomiser.class);
+    Logger logger = LogManager.getLogger(PanelStringRandomiser.class);
     
     /** Creates new form PanelRandomTextGenerator */
     public PanelStringRandomiser()

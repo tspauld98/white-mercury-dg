@@ -13,12 +13,13 @@ import javax.swing.ImageIcon;
 import javax.swing.JCheckBox;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 public class PanelSQLTimestampRandomiser extends RandomiserPanel
 {
-    Logger logger = Logger.getLogger(PanelSQLTimestampRandomiser.class);
+    Logger logger = LogManager.getLogger(PanelSQLTimestampRandomiser.class);
     JCheckBox[] chkDays = new JCheckBox[7];
         
     

@@ -12,13 +12,14 @@ import java.util.LinkedHashMap;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 public class PanelSQLTimeRandomiser extends RandomiserPanel
 {
     
-    Logger logger = Logger.getLogger(PanelSQLTimeRandomiser.class);
+    Logger logger = LogManager.getLogger(PanelSQLTimeRandomiser.class);
     
     /** Creates new form SQLTimeRandomiser */
     public PanelSQLTimeRandomiser()

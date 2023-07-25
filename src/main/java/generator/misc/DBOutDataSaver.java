@@ -12,7 +12,8 @@ import generator.db.DBFieldGenerator;
 import generator.db.DBTableGenerator;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  *
@@ -24,7 +25,7 @@ import org.apache.log4j.Logger;
  */
 public class DBOutDataSaver
 {
-    private Logger logger = Logger.getLogger(DBOutDataSaver.class);
+    private Logger logger = LogManager.getLogger(DBOutDataSaver.class);
     private XMLSaver xmlSaver;
     private Document dom=null;
     private Element  root;

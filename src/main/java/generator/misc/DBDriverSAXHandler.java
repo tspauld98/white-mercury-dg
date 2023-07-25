@@ -6,10 +6,11 @@
 
 
 package generator.misc;
-import java.util.LinkedHashMap;
+//import java.util.LinkedHashMap;
 import java.util.Vector;
-import org.apache.log4j.Logger;
-import generator.extenders.RandomiserInstance;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+//import generator.extenders.RandomiserInstance;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
@@ -20,7 +21,7 @@ import org.xml.sax.SAXException;
  */
 public class DBDriverSAXHandler extends SAXDataHandler
 {
-    private Logger logger = Logger.getLogger(DBDriverSAXHandler.class);
+    private Logger logger = LogManager.getLogger(DBDriverSAXHandler.class);
     
     private Vector<DBDriverInfo> vDriverInfo;
     private DBDriverInfo dbDriverInfo;

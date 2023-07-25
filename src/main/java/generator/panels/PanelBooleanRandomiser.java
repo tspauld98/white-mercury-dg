@@ -5,7 +5,7 @@
 
 package generator.panels;
 import generator.extenders.RandomiserInstance;
-import java.util.HashMap;
+//import java.util.HashMap;
 import java.util.LinkedHashMap;
 import javax.swing.JOptionPane;
 import generator.extenders.RandomiserPanel;

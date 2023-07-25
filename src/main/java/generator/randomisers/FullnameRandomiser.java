@@ -6,11 +6,12 @@
 
 package generator.randomisers;
 import generator.misc.Utils;
-import java.io.FileNotFoundException;
+//import java.io.FileNotFoundException;
 import java.util.LinkedHashMap;
 import java.util.Random;
 import java.util.Vector;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
 
@@ -19,7 +20,7 @@ import generator.extenders.RandomiserInstance;
  */
 public class FullnameRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(FullnameRandomiser.class);
+    Logger logger = LogManager.getLogger(FullnameRandomiser.class);
     int nulls; //percentage of nulls
     
     //these will be retrieved from the RandomiserInstance

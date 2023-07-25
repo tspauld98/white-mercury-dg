@@ -8,7 +8,8 @@
 package generator.misc;
 import generator.db.SQLJavaMapping;
 import java.util.Vector;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
@@ -19,7 +20,7 @@ import org.xml.sax.SAXException;
  */
 public class JavaDbMappingsSAXHandler extends SAXDataHandler
 {
-    private Logger logger = Logger.getLogger(JavaDbMappingsSAXHandler.class);
+    private Logger logger = LogManager.getLogger(JavaDbMappingsSAXHandler.class);
     
     private Vector<SQLJavaMapping> vSQLJavaMapping;
     private SQLJavaMapping sqlJavaMapping;

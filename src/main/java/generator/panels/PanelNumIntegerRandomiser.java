@@ -11,15 +11,16 @@ import java.util.LinkedHashMap;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
-import org.apache.log4j.Logger;
+//import javax.swing.table.TableModel;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.RandomiserPanel;
 import generator.extenders.RandomiserInstance;
 
 
 public class PanelNumIntegerRandomiser extends RandomiserPanel
 {
-    Logger logger = Logger.getLogger(PanelNumIntegerRandomiser.class);
+    Logger logger = LogManager.getLogger(PanelNumIntegerRandomiser.class);
     /** Creates new form PanelDoubleGenerator */
     public PanelNumIntegerRandomiser()
     {
@@ -110,15 +111,15 @@ public class PanelNumIntegerRandomiser extends RandomiserPanel
         );
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Percentages of generated values"));
-        txtFrom.setNextFocusableComponent(txtTo);
+        //txtFrom.setNextFocusableComponent(txtTo);
 
-        txtTo.setNextFocusableComponent(txtPercent);
+        //txtTo.setNextFocusableComponent(txtPercent);
 
-        txtPercent.setNextFocusableComponent(btnAdd);
+        //txtPercent.setNextFocusableComponent(btnAdd);
 
         btnAdd.setIcon(new javax.swing.ImageIcon("C:\\javaprojects\\GenGUI\\images\\list-add-small.png"));
         btnAdd.setText("Add range");
-        btnAdd.setNextFocusableComponent(tblRanges);
+        //btnAdd.setNextFocusableComponent(tblRanges);
         btnAdd.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -127,13 +128,13 @@ public class PanelNumIntegerRandomiser extends RandomiserPanel
             }
         });
 
-        jScrollPane2.setNextFocusableComponent(btnRemove);
-        tblRanges.setNextFocusableComponent(btnRemove);
+        //jScrollPane2.setNextFocusableComponent(btnRemove);
+        //tblRanges.setNextFocusableComponent(btnRemove);
         jScrollPane2.setViewportView(tblRanges);
 
         btnRemove.setIcon(new javax.swing.ImageIcon("C:\\javaprojects\\GenGUI\\images\\list-remove-small.png"));
         btnRemove.setText("Remove Selected");
-        btnRemove.setNextFocusableComponent(spinNull);
+        //btnRemove.setNextFocusableComponent(spinNull);
         btnRemove.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)

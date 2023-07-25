@@ -10,7 +10,8 @@ import generator.misc.Utils;
 import java.util.LinkedHashMap;
 import java.util.Random;
 import java.util.Vector;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
 import generator.extenders.RandomiserInstance;
 import java.io.File;
@@ -18,7 +19,7 @@ import java.io.File;
 
 public class LastnameRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(LastnameRandomiser.class);
+    Logger logger = LogManager.getLogger(LastnameRandomiser.class);
     int nulls;
     int iLNames;
     Random nullGen, gen1;

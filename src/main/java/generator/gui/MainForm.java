@@ -39,7 +39,8 @@ import javax.swing.tree.TreeModel;
 import generator.misc.DataFileDefinition;
 import generator.misc.RandomiserType;
 import generator.misc.Utils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.RandomiserInstance;
 import generator.extenders.RandomiserPanel;
 
@@ -49,7 +50,7 @@ import generator.extenders.RandomiserPanel;
  */
 public class MainForm extends JFrame
 {
-    private Logger logger = Logger.getLogger(MainForm.class);
+    private Logger logger = LogManager.getLogger(MainForm.class);
     
     //store randomiser types, instances and text file definitions
     Vector<RandomiserType> vRandomiserTypes;

@@ -7,15 +7,16 @@
 package generator.randomisers;
 import java.util.LinkedHashMap;
 import java.util.Random;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.IRandomiserFunctionality;
-import generator.extenders.RandomiserPanel;
+//import generator.extenders.RandomiserPanel;
 import generator.extenders.RandomiserInstance;
 
 
 public class BooleanRandomiser implements IRandomiserFunctionality
 {
-    Logger logger = Logger.getLogger(BooleanRandomiser.class);
+    Logger logger = LogManager.getLogger(BooleanRandomiser.class);
     Random probability, nullGen, gen;
     int nulls;
     int limits[];
@@ -60,7 +61,7 @@ public class BooleanRandomiser implements IRandomiserFunctionality
             return null;
         
         prob = gen.nextInt(100);
-        int genField = 0;
+        //int genField = 0;
         
         if(prob>=0 && prob<limits[0])
             return Boolean.valueOf(true);

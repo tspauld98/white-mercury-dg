@@ -23,7 +23,8 @@ import java.util.LinkedHashMap;
 import java.util.Set;
 import java.util.Vector;
 import javax.swing.ImageIcon;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.RandomiserInstance;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -31,7 +32,7 @@ import java.sql.SQLException;
 
 public class Utils
 {
-    Logger logger = Logger.getLogger("generator.Utils");
+    Logger logger = LogManager.getLogger("generator.Utils");
     
     
     public Object createObject(String className)

@@ -9,18 +9,19 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import javax.swing.ImageIcon;
-import javax.swing.JOptionPane.*;
+//import javax.swing.JOptionPane.*;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
-import org.apache.log4j.Logger;
+//import javax.swing.table.TableModel;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import generator.extenders.RandomiserPanel;
 import generator.extenders.RandomiserInstance;
 
 
 public class PanelNumFloatRandomiser extends RandomiserPanel
 {
-    Logger logger = Logger.getLogger(PanelNumFloatRandomiser.class);
+    Logger logger = LogManager.getLogger(PanelNumFloatRandomiser.class);
     
     
     /** Creates new form PanelNumFloatRandomiser */

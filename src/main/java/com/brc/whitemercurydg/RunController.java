@@ -10,7 +10,6 @@ import java.util.Vector;
 
 import javax.swing.JFrame;
 
-import org.apache.log4j.xml.DOMConfigurator;
 import org.perf4j.LoggingStopWatch;
 import org.perf4j.StopWatch;
 
@@ -39,8 +38,6 @@ public class RunController {
 			output = output + outputBanner("Argument List");
 			output = output + "Argument: " + arg + "\n";
 		}
-
-	    DOMConfigurator.configure(log4jConfig);
 
 		switch (currRunMode) {
 			case DATABASE:

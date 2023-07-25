@@ -6,15 +6,16 @@
 package generator.misc;
 
 
-import java.util.LinkedHashMap;
-import java.util.Set;
+//import java.util.LinkedHashMap;
+//import java.util.Set;
 import java.util.Vector;
-import generator.extenders.RandomiserInstance;
-import org.w3c.dom.Attr;
+//import generator.extenders.RandomiserInstance;
+//import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.xml.sax.SAXException;
-import org.apache.log4j.Logger;
+//import org.xml.sax.SAXException;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  *
@@ -26,7 +27,7 @@ import org.apache.log4j.Logger;
  */
 public class DBDriverInfoSaver
 {
-    private Logger logger = Logger.getLogger(DBDriverInfoSaver.class);
+    private Logger logger = LogManager.getLogger(DBDriverInfoSaver.class);
     private XMLSaver xmlSaver;
     private Document dom=null;
     private Element root;

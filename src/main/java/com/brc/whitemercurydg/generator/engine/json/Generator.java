@@ -13,7 +13,8 @@ import java.util.Vector;
 import generator.misc.Constants;
 import generator.misc.RandomiserType;
 import generator.misc.Utils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.brc.whitemercurydg.generator.misc.JSONDataFileDefinition;
 import com.brc.whitemercurydg.generator.misc.JSONDataFileItem;
@@ -28,7 +29,7 @@ public class Generator implements ProgressUpdateObservable {
     Vector<JSONDataFileDefinition> vDataFileDefinitions;
     JSONDataFileDefinition dataFileDefinition;
     
-    Logger logger = Logger.getLogger(Generator.class);
+    Logger logger = LogManager.getLogger(Generator.class);
     
     ProgressUpdateObserver observer;
     

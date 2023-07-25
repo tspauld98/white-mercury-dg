@@ -9,7 +9,8 @@
 
 package generator.jarloader;
 import java.util.Hashtable;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 /**
@@ -33,7 +34,7 @@ public abstract class MultiClassLoader extends ClassLoader
     private Hashtable classes = new Hashtable();
     private char      classNameReplacementChar;
     
-    private Logger logger = Logger.getLogger(MultiClassLoader.class);
+    private Logger logger = LogManager.getLogger(MultiClassLoader.class);
     
 //---------- Initialization ------------------------------
     public MultiClassLoader()

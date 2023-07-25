@@ -9,14 +9,15 @@ import java.util.LinkedHashMap;
 import javax.swing.JOptionPane;
 import generator.extenders.RandomiserPanel;
 import generator.extenders.RandomiserInstance;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 
 
 public class PanelEnglishWordRandomiser extends RandomiserPanel
 {
-    Logger logger = Logger.getLogger(PanelEnglishWordRandomiser.class);
+    Logger logger = LogManager.getLogger(PanelEnglishWordRandomiser.class);
     
     /** Creates new form EnglishTextRandomiser */
     public PanelEnglishWordRandomiser()
