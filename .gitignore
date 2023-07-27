@@ -12,3 +12,7 @@ test-output
 test.out
 *.json
 /src/main/sql
+
+# Gradle
+.gradle
+build/
