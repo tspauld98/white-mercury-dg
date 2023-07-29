@@ -21,7 +21,7 @@ public class WhiteMercuryDGMain {
 		String output = null;
 		RunController runner = new RunController();
 		RunMode sitRunMode = RunMode.fromString(System.getProperty("runMode"));
-		URL log4jConfig = WhiteMercuryDGMain.class.getResource("/generator.xml");
+		URL log4jConfig = WhiteMercuryDGMain.class.getResource("/log4j2.xml");
 
 		try {
 			output = runner.runByMode(args, sitRunMode, log4jConfig);
