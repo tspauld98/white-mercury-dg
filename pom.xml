@@ -76,7 +76,7 @@
 						</artifactSet>
                         <transformers>
                             <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                <mainClass>com.brc.white-mercury-dg.WhiteMercuryDGMain</mainClass>
+                                <mainClass>com.brc.whitemercurydg.WhiteMercuryDGMain</mainClass>
                             </transformer>
                         </transformers>
                         <filters>
