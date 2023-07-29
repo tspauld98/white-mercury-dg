@@ -3,7 +3,7 @@ White Mercury Data Generator Project
 
 [![CI/CD](https://github.com/tspauld98/white-mercury-dg/actions/workflows/gradle.yml/badge.svg)](https://github.com/tspauld98/white-mercury-dg/actions/workflows/gradle.yml)
 [![GitHub release badge](https://badgen.net/github/release/tspauld98/white-mercury-dg/stable)](https://github.com/tspauld98/white-mercury-dg/releases/latest)
-[![GitHub license badge](misc/badge-license.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 
 Description
