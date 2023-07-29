@@ -7,10 +7,12 @@
 plugins {
     `java-library`
     `maven-publish`
+    id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
 repositories {
     mavenLocal()
+    mavenCentral()
     maven {
         url = uri("https://repo.maven.apache.org/maven2/")
     }
@@ -33,7 +35,7 @@ dependencies {
 group = "com.brc"
 version = "0.0.1-SNAPSHOT"
 description = "white-mercury-dg"
-java.sourceCompatibility = JavaVersion.VERSION_1_7
+java.sourceCompatibility = JavaVersion.VERSION_17
 
 publishing {
     publications.create<MavenPublication>("maven") {
@@ -51,4 +53,18 @@ tasks.withType<Javadoc>() {
 
 tasks.named<Test>("test") {
     useTestNG()
+}
+
+tasks.shadowJar {
+    archiveClassifier.set("shaded")
+    manifest {
+        attributes["Created-By"] = "Gradle ${gradle.gradleVersion}"
+        attributes["Main-Class"] = "com.brc.whitemercurydg.WhiteMercuryDGMain"
+    }   
+}
+
+tasks {
+    build {
+        dependsOn("shadowJar")
+    }
 }
