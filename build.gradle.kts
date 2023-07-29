@@ -53,6 +53,7 @@ tasks.withType<Javadoc>() {
 
 tasks.named<Test>("test") {
     useTestNG()
+    jvmArgs("-Djava.awt.headless=true")
 }
 
 tasks.shadowJar {
