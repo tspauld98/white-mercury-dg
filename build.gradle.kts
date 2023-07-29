@@ -8,6 +8,7 @@ plugins {
     `java-library`
     `maven-publish`
     id("com.github.johnrengelman.shadow") version "8.1.1"
+    `jacoco`
 }
 
 repositories {
@@ -54,6 +55,7 @@ tasks.withType<Javadoc>() {
 tasks.named<Test>("test") {
     useTestNG()
     jvmArgs("-Djava.awt.headless=true")
+    finalizedBy(tasks.jacocoTestReport)
 }
 
 tasks.shadowJar {
@@ -62,6 +64,10 @@ tasks.shadowJar {
         attributes["Created-By"] = "Gradle ${gradle.gradleVersion}"
         attributes["Main-Class"] = "com.brc.whitemercurydg.WhiteMercuryDGMain"
     }   
+}
+
+tasks.jacocoTestReport {
+    dependsOn(tasks.test)
 }
 
 tasks {
