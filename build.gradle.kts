@@ -38,6 +38,10 @@ version = "0.0.1-SNAPSHOT"
 description = "white-mercury-dg"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
+jacoco {
+    toolVersion = "0.8.9"
+}
+
 publishing {
     publications.create<MavenPublication>("maven") {
         from(components["java"])
@@ -68,6 +72,9 @@ tasks.shadowJar {
 
 tasks.jacocoTestReport {
     dependsOn(tasks.test)
+    reports {
+        xml.required.set(true)
+    }
 }
 
 tasks {

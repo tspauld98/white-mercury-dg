@@ -42,3 +42,11 @@ jobs:
           build/test-results/**/*.xml
           build/test-results/**/*.trx
           build/test-results/**/*.json
+    - name: Add Coverage to PR
+      id: jacoco
+      uses: madrapps/jacoco-report@v1.5
+      with:
+        paths: ${{ github.workspace }}/**/build/reports/jacoco/test/jacocoTestReport.xml
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: Code Coverage
+        pass-emoji: ':heavy_check_mark:'
