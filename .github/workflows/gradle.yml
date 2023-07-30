@@ -50,4 +50,4 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         title: Code Coverage
         update-comment: true
-        debug-mode: true
+        debug-mode: false
