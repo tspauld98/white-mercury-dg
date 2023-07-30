@@ -34,7 +34,7 @@ dependencies {
 }
 
 group = "com.brc"
-version = "0.0.1-SNAPSHOT"
+version = "1.0.1-SNAPSHOT"
 description = "white-mercury-dg"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
@@ -43,8 +43,20 @@ jacoco {
 }
 
 publishing {
-    publications.create<MavenPublication>("maven") {
-        from(components["java"])
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/tspauld98/white-mercury-dg")
+            credentials {
+                username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_USERNAME")
+                password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_PUB_ACCESS_TOKEN")
+            }
+        }
+    }
+    publications {
+        register<MavenPublication>("gpr") {
+            from(components["java"])
+        }
     }
 }
 
