@@ -1,10 +1,10 @@
 White Mercury Data Generator Project
 ====================================
 
-[![CI/CD](https://github.com/tspauld98/white-mercury-dg/actions/workflows/gradle-build-on-push-or-pr.yml/badge.svg)](https://github.com/tspauld98/white-mercury-dg/actions/workflows/gradle-build-on-push-or-pr.yml)
+[![CI/CD badge](https://github.com/tspauld98/white-mercury-dg/actions/workflows/gradle-build-on-push-or-pr.yml/badge.svg)](https://github.com/tspauld98/white-mercury-dg/actions/workflows/gradle-build-on-push-or-pr.yml)
 [![GitHub release badge](https://img.shields.io/github/v/release/tspauld98/white-mercury-dg)](https://github.com/tspauld98/white-mercury-dg/releases/latest)
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-[![GitHub issues](https://img.shields.io/github/issues/tspauld98/white-mercury-dg.svg)](https://github.com/tspauld98/white-mercury-dg/issues)
+[![License badge](https://img.shields.io/github/license/tspauld98/white-mercury-dg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![GitHub issues badge](https://img.shields.io/github/issues/tspauld98/white-mercury-dg.svg)](https://github.com/tspauld98/white-mercury-dg/issues)
 
 Description
 -----------
