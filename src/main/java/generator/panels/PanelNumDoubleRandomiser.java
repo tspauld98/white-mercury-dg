@@ -254,17 +254,17 @@ public class PanelNumDoubleRandomiser extends RandomiserPanel
         sPercent= txtPercent.getText();
         
         try
-        {dblValues[0] = new Double(sFrom);}
+        {dblValues[0] = Double.valueOf(sFrom);}
         catch(Exception e)
         {error=1;}
         
         try
-        {dblValues[1] = new Double(sTo);}
+        {dblValues[1] = Double.valueOf(sTo);}
         catch(Exception e)
         {error=2;}
         
         try
-        {dblValues[2] = new Double(sPercent);}
+        {dblValues[2] = Double.valueOf(sPercent);}
         catch(Exception e)
         {error=3;}
         
@@ -330,11 +330,11 @@ public class PanelNumDoubleRandomiser extends RandomiserPanel
             for(int i=0; i<iMax; i++)
             {
                 sDblValue =(String)hashmap.get("fromField"+i);
-                dblValues[0] = new Double(sDblValue);
+                dblValues[0] = Double.valueOf(sDblValue);
                 sDblValue =(String)hashmap.get("toField"+i);
-                dblValues[1] = new Double(sDblValue);
+                dblValues[1] = Double.valueOf(sDblValue);
                 sDblValue =(String)hashmap.get("percentField"+i);
-                dblValues[2] = new Double(sDblValue);
+                dblValues[2] = Double.valueOf(sDblValue);
                 
                 newModel.addRow(dblValues);
             }
@@ -376,7 +376,7 @@ public class PanelNumDoubleRandomiser extends RandomiserPanel
                     catch(ClassCastException e)
                     {
                         tempData = (String) newModel.getValueAt(i,k);
-                        dblValues[k] = new Double(tempData);
+                        dblValues[k] = Double.valueOf(tempData);
                     }
                 }
                 hashmap.put("fromField"+i,""+ dblValues[0].doubleValue() );
@@ -448,7 +448,7 @@ public class PanelNumDoubleRandomiser extends RandomiserPanel
                     catch(ClassCastException e)
                     {
                         tempData = (String) newModel.getValueAt(i,k);
-                        dblValues[k] = new Double(tempData);
+                        dblValues[k] = Double.valueOf(tempData);
                     }
                 }
                 percent+=dblValues[2].intValue();

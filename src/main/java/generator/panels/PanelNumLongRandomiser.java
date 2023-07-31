@@ -236,17 +236,17 @@ public class PanelNumLongRandomiser extends RandomiserPanel
         sPercent= txtPercent.getText();
         
         try
-        {lValues[0] = new Long(sFrom);}
+        {lValues[0] = Long.valueOf(sFrom);}
         catch(Exception e)
         {error=1;}
         
         try
-        {lValues[1] = new Long(sTo);}
+        {lValues[1] = Long.valueOf(sTo);}
         catch(Exception e)
         {error=2;}
         
         try
-        {lValues[2] = new Long(sPercent);}
+        {lValues[2] = Long.valueOf(sPercent);}
         catch(Exception e)
         {error=3;}
         
@@ -289,11 +289,11 @@ public class PanelNumLongRandomiser extends RandomiserPanel
             for(int i=0; i<iMax; i++)
             {
                 sIntValue =(String)hashmap.get("fromField"+i);
-                longValues[0] = new Long(sIntValue);
+                longValues[0] = Long.valueOf(sIntValue);
                 sIntValue =(String)hashmap.get("toField"+i);
-                longValues[1] = new Long(sIntValue);
+                longValues[1] = Long.valueOf(sIntValue);
                 sIntValue =(String)hashmap.get("percentField"+i);
-                longValues[2] = new Long(sIntValue);
+                longValues[2] = Long.valueOf(sIntValue);
                 
                 newModel.addRow(longValues);
             }
@@ -334,7 +334,7 @@ public class PanelNumLongRandomiser extends RandomiserPanel
                     catch(ClassCastException e)
                     {
                         tempData = (String) newModel.getValueAt(i,k);
-                        longValues[k] = new Long(tempData);                       
+                        longValues[k] = Long.valueOf(tempData);                       
                     }                    
                 }
                 hashmap.put("fromField"+i,""+ longValues[0].longValue() );
@@ -396,7 +396,7 @@ public class PanelNumLongRandomiser extends RandomiserPanel
                     catch(ClassCastException e)
                     {
                         tempData = (String) newModel.getValueAt(i,k);
-                        longValues[k] = new Long(tempData);                       
+                        longValues[k] = Long.valueOf(tempData);                       
                     }
                 }
                 percent+=longValues[2].intValue();

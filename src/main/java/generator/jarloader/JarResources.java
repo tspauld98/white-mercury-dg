@@ -25,8 +25,8 @@ public final class JarResources
     Logger logger = LogManager.getLogger(JarResources.class);
     
     // jar resource mapping tables
-    private Hashtable htSizes=new Hashtable();
-    private Hashtable htJarContents=new Hashtable();
+    private Hashtable<String, Integer> htSizes=new Hashtable<String, Integer>();
+    private Hashtable<String, byte[]> htJarContents=new Hashtable<String, byte[]>();
     
     // a jar file
     private String jarFileName;
@@ -66,7 +66,7 @@ public final class JarResources
                 
                 logger.debug(dumpZipEntry(ze));
                 
-                htSizes.put(ze.getName(),new Integer((int)ze.getSize()));
+                htSizes.put(ze.getName(), Integer.valueOf((int)ze.getSize()));
             }
             zf.close();
             

@@ -38,7 +38,7 @@ public class DBUtils
     {
         // Use reflection to populate a map of int values to names
         if (map != null)
-            return (String)map.get(new Integer(jdbcType));
+            return (String)map.get(Integer.valueOf(jdbcType));
         
         map = new HashMap();
         

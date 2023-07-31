@@ -247,17 +247,17 @@ public class PanelNumIntegerRandomiser extends RandomiserPanel
         sPercent= txtPercent.getText();
         
         try
-        {iValues[0] = new Integer(sFrom);}
+        {iValues[0] = Integer.valueOf(sFrom);}
         catch(Exception e)
         {error=1;}
         
         try
-        {iValues[1] = new Integer(sTo);}
+        {iValues[1] = Integer.valueOf(sTo);}
         catch(Exception e)
         {error=2;}
         
         try
-        {iValues[2] = new Integer(sPercent);}
+        {iValues[2] = Integer.valueOf(sPercent);}
         catch(Exception e)
         {error=3;}
         
@@ -299,11 +299,11 @@ public class PanelNumIntegerRandomiser extends RandomiserPanel
             for(int i=0; i<iMax; i++)
             {
                 sIntValue =(String)hashmap.get("fromField"+i);
-                intValues[0] = new Integer(sIntValue);
+                intValues[0] = Integer.valueOf(sIntValue);
                 sIntValue =(String)hashmap.get("toField"+i);
-                intValues[1] = new Integer(sIntValue);
+                intValues[1] = Integer.valueOf(sIntValue);
                 sIntValue =(String)hashmap.get("percentField"+i);
-                intValues[2] = new Integer(sIntValue);
+                intValues[2] = Integer.valueOf(sIntValue);
                 
                 newModel.addRow(intValues);
             }
@@ -344,7 +344,7 @@ public class PanelNumIntegerRandomiser extends RandomiserPanel
                     catch(ClassCastException e)
                     {
                         tempData = (String) newModel.getValueAt(i,k);
-                        intValues[k] = new Integer(tempData);                       
+                        intValues[k] = Integer.valueOf(tempData);                       
                     }                    
                 }
                 hashmap.put("fromField"+i,""+ intValues[0].intValue() );
@@ -405,7 +405,7 @@ public class PanelNumIntegerRandomiser extends RandomiserPanel
                     catch(ClassCastException e)
                     {
                         tempData = (String) newModel.getValueAt(i,k);
-                        intValues[k] = new Integer(tempData);                       
+                        intValues[k] = Integer.valueOf(tempData);                       
                     }
                 }
                 percent+=intValues[2];
