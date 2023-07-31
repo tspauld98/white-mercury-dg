@@ -208,7 +208,7 @@ public class PanelListItemRandomiser  extends RandomiserPanel
                 {
                     sItem =(String)hashmap.get("itemField"+i);
                     sIntValue =(String)hashmap.get("percentField"+i);
-                    intValue  = new Integer(sIntValue);                    
+                    intValue  = Integer.valueOf(sIntValue);                    
                     data[0] = sItem;
                     if(intValue.intValue()==-1)
                         data[1] = "";
@@ -509,7 +509,7 @@ public class PanelListItemRandomiser  extends RandomiserPanel
         if(sPercent.trim().length()>0)
         {
             try
-            {iValue = new Integer(sPercent);}
+            {iValue = Integer.valueOf(sPercent);}
             catch(Exception e)
             {error=1;}
 

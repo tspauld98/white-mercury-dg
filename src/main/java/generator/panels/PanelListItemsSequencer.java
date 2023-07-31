@@ -160,7 +160,7 @@ public class PanelListItemsSequencer  extends RandomiserPanel
                 {
                     sItem =(String)hashmap.get("itemField"+i);
                     sIntValue =(String)hashmap.get("percentField"+i);
-                    intValue  = new Integer(sIntValue);                    
+                    intValue  = Integer.valueOf(sIntValue);                    
                     data[0] = sItem;
                     if(intValue.intValue()==-1)
                         data[1] = "";

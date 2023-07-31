@@ -238,17 +238,17 @@ public class PanelNumShortRandomiser extends RandomiserPanel
         sPercent= txtPercent.getText();
         
         try
-        {srtValues[0] = new Short(sFrom);}
+        {srtValues[0] = Short.valueOf(sFrom);}
         catch(Exception e)
         {error=1;}
         
         try
-        {srtValues[1] = new Short(sTo);}
+        {srtValues[1] = Short.valueOf(sTo);}
         catch(Exception e)
         {error=2;}
         
         try
-        {srtValues[2] = new Short(sPercent);}
+        {srtValues[2] = Short.valueOf(sPercent);}
         catch(Exception e)
         {error=3;}
         
@@ -290,11 +290,11 @@ public class PanelNumShortRandomiser extends RandomiserPanel
             for(int i=0; i<iMax; i++)
             {
                 sSrtValue =(String)hashmap.get("fromField"+i);
-                srtValues[0] = new Short(sSrtValue);
+                srtValues[0] = Short.valueOf(sSrtValue);
                 sSrtValue =(String)hashmap.get("toField"+i);
-                srtValues[1] = new Short(sSrtValue);
+                srtValues[1] = Short.valueOf(sSrtValue);
                 sSrtValue =(String)hashmap.get("percentField"+i);
-                srtValues[2] = new Short(sSrtValue);
+                srtValues[2] = Short.valueOf(sSrtValue);
                 
                 newModel.addRow(srtValues);
             }
@@ -335,7 +335,7 @@ public class PanelNumShortRandomiser extends RandomiserPanel
                     catch(ClassCastException e)
                     {
                         tempData = (String) newModel.getValueAt(i,k);
-                        srtValues[k] = new Short(tempData);                       
+                        srtValues[k] = Short.valueOf(tempData);                       
                     }                    
                 }
                 hashmap.put("fromField"+i,""+ srtValues[0].shortValue() );
@@ -397,7 +397,7 @@ public class PanelNumShortRandomiser extends RandomiserPanel
                     catch(ClassCastException e)
                     {
                         tempData = (String) newModel.getValueAt(i,k);
-                        srtValues[k] = new Short(tempData);                       
+                        srtValues[k] = Short.valueOf(tempData);                       
                     }
                 }
                 percent+=srtValues[2];

@@ -253,17 +253,17 @@ public class PanelNumFloatRandomiser extends RandomiserPanel
         sPercent= txtPercent.getText();
         
         try
-        {fltlValues[0] = new Float(sFrom);}
+        {fltlValues[0] = Float.valueOf(sFrom);}
         catch(Exception e)
         {error=1;}
         
         try
-        {fltlValues[1] = new Float(sTo);}
+        {fltlValues[1] = Float.valueOf(sTo);}
         catch(Exception e)
         {error=2;}
         
         try
-        {fltlValues[2] = new Float(sPercent);}
+        {fltlValues[2] = Float.valueOf(sPercent);}
         catch(Exception e)
         {error=3;}
         
@@ -329,11 +329,11 @@ public class PanelNumFloatRandomiser extends RandomiserPanel
             for(int i=0; i<iMax; i++)
             {
                 sDblValue =(String)hashmap.get("fromField"+i);
-                fltValues[0] = new Float(sDblValue);
+                fltValues[0] = Float.valueOf(sDblValue);
                 sDblValue =(String)hashmap.get("toField"+i);
-                fltValues[1] = new Float(sDblValue);
+                fltValues[1] = Float.valueOf(sDblValue);
                 sDblValue =(String)hashmap.get("percentField"+i);
-                fltValues[2] = new Float(sDblValue);
+                fltValues[2] = Float.valueOf(sDblValue);
                 
                 newModel.addRow(fltValues);
             }
@@ -375,7 +375,7 @@ public class PanelNumFloatRandomiser extends RandomiserPanel
                     catch(ClassCastException e)
                     {
                         tempData = (String) newModel.getValueAt(i,k);
-                        fltValues[k] = new Float(tempData);
+                        fltValues[k] = Float.valueOf(tempData);
                     }
                 }
                 hashmap.put("fromField"+i,""+ fltValues[0].floatValue() );
@@ -447,7 +447,7 @@ public class PanelNumFloatRandomiser extends RandomiserPanel
                     catch(ClassCastException e)
                     {
                         tempData = (String) newModel.getValueAt(i,k);
-                        fltValues[k] = new Float(tempData);
+                        fltValues[k] = Float.valueOf(tempData);
                     }
                 }
                 percent+=fltValues[2].intValue();

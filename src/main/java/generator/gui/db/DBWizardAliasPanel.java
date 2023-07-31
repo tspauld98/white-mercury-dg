@@ -359,7 +359,7 @@ public class DBWizardAliasPanel extends javax.swing.JPanel implements IWizardSte
             selected  = (Boolean)modelTB.getValueAt(i,0);
             tableName = (String)modelTB.getValueAt(i,1);
             if(tableName.length()>0)
-                modelTB.setValueAt(new Boolean(!selected),i,0 );
+                modelTB.setValueAt(Boolean.valueOf(!selected),i,0 );
         }
     }//GEN-LAST:event_btnInverseActionPerformed
     
@@ -370,7 +370,7 @@ public class DBWizardAliasPanel extends javax.swing.JPanel implements IWizardSte
         {
             tableName = (String)modelTB.getValueAt(i,1);
             if(tableName.length()>0)
-                modelTB.setValueAt(new Boolean(false),i,0 );
+                modelTB.setValueAt(Boolean.valueOf(false),i,0 );
         }
     }//GEN-LAST:event_btnUnselectActionPerformed
     
@@ -381,7 +381,7 @@ public class DBWizardAliasPanel extends javax.swing.JPanel implements IWizardSte
         {
             tableName = (String)modelTB.getValueAt(i,1);
             if(tableName.length()>0)
-                modelTB.setValueAt(new Boolean(true),i,0 );
+                modelTB.setValueAt(Boolean.valueOf(true),i,0 );
         }
     }//GEN-LAST:event_btnSelectAllActionPerformed
     
@@ -693,10 +693,10 @@ public class DBWizardAliasPanel extends javax.swing.JPanel implements IWizardSte
 class TableTBModel extends AbstractTableModel
 {
     String columnNames[] = {"Selected", "Table"};
-    private Object[][] data ={ {new Boolean(false),"" },
-    {new Boolean(false),"" },
-    {new Boolean(false),"" },
-    {new Boolean(false),"" },
+    private Object[][] data ={ {Boolean.valueOf(false),"" },
+    {Boolean.valueOf(false),"" },
+    {Boolean.valueOf(false),"" },
+    {Boolean.valueOf(false),"" },
     };
     private Object[][] empty;
     private ArrayList alTables;
