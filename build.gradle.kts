@@ -34,7 +34,7 @@ dependencies {
 }
 
 group = "com.brc"
-version = "1.0.2-SNAPSHOT"
+version = "1.0.2"
 description = "white-mercury-dg"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
