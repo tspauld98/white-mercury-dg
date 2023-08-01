@@ -62,6 +62,7 @@ publishing {
 
 tasks.withType<JavaCompile>() {
     options.encoding = "UTF-8"
+    options.compilerArgs.addAll(listOf("-Xlint:all", "-Xmaxwarns", "1000"))
 }
 
 tasks.withType<Javadoc>() {
