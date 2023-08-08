@@ -9,5 +9,6 @@ sequenceDiagram
     WhiteMercuryDGMain->>RunController: new
     WhiteMercuryDGMain->>RunController: runByMode
     activate RunController
+    RunController->>WhiteMercuryDGMain: run
     deactivate RunController
 ```
