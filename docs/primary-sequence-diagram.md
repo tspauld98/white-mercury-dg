@@ -4,8 +4,10 @@ This document contains the sequence diagram that represents a data generation ru
 
 ```mermaid
 sequenceDiagram
-    create participant RunController
+    participant WhiteMercuryDGMain
+    participant RunController
     WhiteMercuryDGMain->>RunController: new
-    WhiteMercuryDGMain->>+RunController: runByMode
-    destroy RunController
+    WhiteMercuryDGMain->>RunController: runByMode
+    activate RunController
+    deactivate RunController
 ```
