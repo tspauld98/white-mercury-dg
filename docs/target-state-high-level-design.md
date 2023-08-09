@@ -131,7 +131,6 @@ classDiagram
 ```mermaid
 timeline
     section Current State
-        2023-08-01: Current State
         2023-08-11: Current Feature Validation
         2023-08-18: Test Automation for Current Feature
         2023-08-25: Release v1.0.3
