@@ -8,8 +8,15 @@
 name: build
 
 on:
-  - push
-  - pull_request
+  push:
+    paths:
+      - 'src/**'
+      - 'build.gradle'
+      - 'gradle.properties'
+      - 'gradlew'
+      - 'gradlew.bat'
+      - 'settings.gradle'
+  pull_request:
 
 permissions:
   contents: read
